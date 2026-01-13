@@ -13,12 +13,12 @@ import java.util.Scanner;
 public class MyCode {
     public static int askForNumberBetween(int min, int max, String msg){
         Scanner sc = new Scanner (System.in);
-        int op;
+        int opc;
         do{
             System.out.println(msg);
-            op = sc.nextInt();
-        }while(op < min || op > max);
-        return op;
+            opc = sc.nextInt();
+        }while(opc < min || opc > max);
+        return opc;
     }
     
     public static String askForName(String msg){
